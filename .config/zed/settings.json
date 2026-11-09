@@ -1,0 +1,141 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "cli_default_open_behavior": "existing_window",
+  "redact_private_values": true,
+  "session": {
+    "trust_all_worktrees": true,
+  },
+  "use_system_path_prompts": false,
+  "use_system_prompts": false,
+  "theme": "Datum - Dark",
+  "icon_theme": "Warm Charmed Icons",
+  "cursor_animation": { "enabled": true },
+  "buffer_font_family": "JetBrainsMono Nerd Font",
+  "buffer_font_size": 18,
+  "buffer_font_features": { "calt": true },
+  "buffer_line_height": "comfortable",
+  "ui_font_size": 18,
+  "ui_font_family": "JetBrainsMono Nerd Font",
+  "base_keymap": "VSCode",
+  "vim_mode": true,
+  "vim": {
+    "default_mode": "normal",
+    "highlight_on_yank_duration": 200,
+    "use_smartcase_find": true,
+    "use_system_clipboard": "always",
+  },
+
+  "preferred_line_length": 100,
+  "soft_wrap": "prefer_line",
+  "show_whitespaces": "none",
+  "colorize_brackets": true,
+  "lsp_document_colors": "background",
+  "hide_mouse": "on_typing_and_action",
+  "indent_guides": {
+    "enabled": true,
+    "coloring": "indent_aware",
+  },
+  "inlay_hints": { "enabled": false },
+  "sticky_scroll": { "enabled": true },
+
+  "disable_ai": true,
+  "show_edit_predictions": true,
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+  },
+
+  // Search & files
+  "search": { "button": true },
+  "file_finder": { "modal_max_width": "small" },
+  "file_types": {
+    "Dockerfile": ["Dockerfile", "Dockerfile.*"],
+  },
+  "file_scan_exclusions": [
+    "**/.DS_Store",
+    "**/.git",
+    "**/.husky",
+    "**/.next",
+    "**/.storybook",
+    "**/.turbo",
+    "**/.vscode",
+    "**/Thumbs.db",
+    "**/dist",
+    "**/node_modules",
+    "**/out",
+  ],
+
+  "tabs": {
+    "file_icons": true,
+    "git_status": true,
+    "show_diagnostics": "errors",
+  },
+  "tab_bar": {
+    "show_nav_history_buttons": false,
+    "show_pinned_tabs_in_separate_row": false,
+    "show_tab_bar_buttons": false,
+  },
+  "minimap": { "show": "never" },
+  "scrollbar": { "show": "never" },
+  "status_bar": {
+    "active_encoding_button": "non_utf8",
+    "line_endings_button": true,
+  },
+  "toolbar": {
+    "agent_review": false,
+    "breadcrumbs": false,
+    "code_actions": false,
+    "quick_actions": false,
+    "selections_menu": true,
+  },
+  "title_bar": {
+    "show_onboarding_banner": false,
+    "show_sign_in": false,
+    "show_user_menu": false,
+    "show_user_picture": false,
+  },
+  "project_panel": {
+    "button": true,
+    "dock": "right",
+    "git_status": true,
+    "indent_size": 16,
+    "show_diagnostics": "errors",
+    "starts_open": true,
+    "scrollbar": {
+      "horizontal_scroll": false,
+    },
+  },
+  "git_panel": {
+    "button": true,
+    "dock": "right",
+  },
+  "outline_panel": {
+    "dock": "right",
+  },
+  "collaboration_panel": {
+    "button": false,
+    "dock": "left",
+  },
+  "agent": {
+    "enabled": false,
+    "button": false,
+    "dock": "left",
+  },
+  "git": {
+    "git_gutter": "tracked_files",
+    "inline_blame": {
+      "enabled": true,
+    },
+  },
+  "on_new_window": "empty_tab",
+  "go_to_definition_scroll_strategy": "center",
+  "completion_menu_item_kind": "symbol",
+  "diff_view_style": "split",
+}

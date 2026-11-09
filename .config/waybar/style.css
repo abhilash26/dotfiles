@@ -1,0 +1,123 @@
+@define-color bg           #0f1318;
+@define-color fg           #dbe0e8;
+@define-color cursor       #fa94cd;
+@define-color cursor_text  #0f1318;
+@define-color selection_bg #2b2f35;
+@define-color selection_fg #dbe0e8;
+@define-color url          #69b9f7;
+
+@define-color color0  #2b2f35;
+@define-color color1  #fe9864;
+@define-color color2  #54dcaa;
+@define-color color3  #e8df69;
+@define-color color4  #69b9f7;
+@define-color color5  #fa94cd;
+@define-color color6  #6ae5ec;
+@define-color color7  #dbe0e8;
+@define-color color8  #8f98a3;
+@define-color color9  #f8bd5f;
+@define-color color10 #54dcaa;
+@define-color color11 #fcdcad;
+@define-color color12 #b2dafb;
+@define-color color13 #f5b9d9;
+@define-color color14 #a5f5f9;
+@define-color color15 #eef2f7;
+
+* {
+  border: none;
+  border-radius: 0;
+  min-height: 0;
+  font-family: "JetBrainsMono Nerd Font Propo";
+  font-size: 15px;
+  font-weight: 600;
+}
+
+window#waybar { background: transparent; }
+
+/* Island capsules */
+window#waybar > box > box {
+}
+
+.modules-left,
+.margin-right {
+  margin: 0 4px;
+}
+
+.modules-center {
+  color: @color5;
+  padding: 0 16px;
+}
+
+/* Shared module spacing */
+#workspaces,
+#clock,
+#backlight,
+#wireplumber,
+#network,
+#power-profiles-daemon,
+#idle_inhibitor,
+#battery,
+#tray {
+  padding: 0 8px;
+  background: @bg;
+  border-radius: 24px;
+  margin: 0 4px;
+  padding: 2px 16px;
+}
+
+#workspaces {
+    margin: 0;
+    padding: 0;
+}
+
+/* Mango workspaces */
+#workspaces button {
+  color: @color8;
+  background: transparent;
+  border-radius: 50%;
+  padding: 0 8px;
+  margin: 0 2px;
+}
+
+#workspaces button:hover {
+  color: @fg;
+  background: @selection_bg;
+}
+
+#workspaces button.active {
+  color: @cursor_text;
+  background: @cursor;
+}
+
+#workspaces button.urgent {
+  color: @cursor_text;
+  background: @color1;
+}
+
+/* Current window title */
+#window {
+  color: @color12;
+  margin-left: 4px;
+}
+
+/* Center clock */
+#clock { color: @color14; }
+
+/* Right-side modules */
+#backlight { color: @color3; }
+#wireplumber { color: @color6; }
+#network { color: @color4; }
+#battery { color: @color2; }
+#battery.warning { color: @color9; }
+#battery.critical { color: @color1; }
+#power-profiles-daemon { color: @color2; }
+#idle_inhibitor { color: @color11; }
+
+
+/* Tooltips */
+tooltip {
+  color: @fg;
+  background: @bg;
+  border: 1px solid @selection_bg;
+  border-radius: 10px;
+}
