@@ -24,31 +24,34 @@
 @define-color color15 #eef2f7;
 
 * {
-  border: none;
-  border-radius: 0;
-  min-height: 0;
-  font-family: "JetBrainsMono Nerd Font Propo";
-  font-size: 15px;
-  font-weight: 600;
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+    color: @fg;
+    font-family: "JetBrainsMono Nerd Font Propo";
+    font-size: 15px;
+    font-weight: 600;
 }
 
-window#waybar { background: transparent; }
-
-/* Island capsules */
-window#waybar > box > box {
+window#waybar {
+    background: transparent;
 }
 
+/* Module groups */
 .modules-left,
-.margin-right {
-  margin: 0 4px;
+.modules-center,
+.modules-right {
+    margin: 0 4px;
 }
 
 .modules-center {
-  color: @color5;
-  padding: 0 16px;
+    color: @color5;
+    padding: 0 16px;
 }
 
-/* Shared module spacing */
+/* Shared module capsule styling */
 #workspaces,
 #clock,
 #backlight,
@@ -58,66 +61,80 @@ window#waybar > box > box {
 #idle_inhibitor,
 #battery,
 #tray {
-  padding: 0 8px;
-  background: @bg;
-  border-radius: 24px;
-  margin: 0 4px;
-  padding: 2px 16px;
+    background: @bg;
+    border-radius: 24px;
+    margin: 0 4px;
+    padding: 2px 16px;
 }
 
+/* Workspaces */
 #workspaces {
     margin: 0;
     padding: 0;
 }
 
-/* Mango workspaces */
 #workspaces button {
-  color: @color8;
-  background: transparent;
-  border-radius: 50%;
-  padding: 0 8px;
-  margin: 0 2px;
+    background: transparent;
+    border-radius: 50%;
+    margin: 0 2px;
+    padding: 0 8px;
 }
 
 #workspaces button:hover {
-  color: @fg;
-  background: @selection_bg;
+    background: @selection_bg;
 }
 
-#workspaces button.active {
-  color: @cursor_text;
-  background: @cursor;
+#workspaces button.active,
+#workspaces button.active label {
+    color: @cursor_text;
+    background: @cursor;
 }
 
 #workspaces button.urgent {
-  color: @cursor_text;
-  background: @color1;
+    background: @color1;
 }
 
-/* Current window title */
-#window {
-  color: @color12;
-  margin-left: 4px;
+/* Module colors */
+#clock {
+    color: @color14;
 }
 
-/* Center clock */
-#clock { color: @color14; }
+#backlight {
+    color: @color3;
+}
 
-/* Right-side modules */
-#backlight { color: @color3; }
-#wireplumber { color: @color6; }
-#network { color: @color4; }
-#battery { color: @color2; }
-#battery.warning { color: @color9; }
-#battery.critical { color: @color1; }
-#power-profiles-daemon { color: @color2; }
-#idle_inhibitor { color: @color11; }
+#wireplumber {
+    color: @color6;
+}
 
+#network {
+    color: @color4;
+}
+
+#battery {
+    color: @color2;
+}
+
+#battery.warning {
+    color: @color9;
+}
+
+#battery.critical {
+    color: @color1;
+}
+
+#power-profiles-daemon {
+    color: @color2;
+}
+
+#idle_inhibitor {
+    color: @color11;
+}
 
 /* Tooltips */
 tooltip {
-  color: @fg;
-  background: @bg;
-  border: 1px solid @selection_bg;
-  border-radius: 10px;
+    color: @fg;
+    background: @bg;
+    border: 1px solid @selection_bg;
+    border-radius: 10px;
 }
