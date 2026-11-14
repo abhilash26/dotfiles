@@ -1,8 +1,3 @@
-<<<<<<< HEAD
 .zcompdump
 .zcompdump.*
-.zsh_history
-=======
-.zcomp*
-*.*history*
->>>>>>> a34560c (CHORE: initial commit)
+.config/zsh/.zsh_history
