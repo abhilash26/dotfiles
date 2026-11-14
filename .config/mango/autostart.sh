@@ -16,7 +16,11 @@ brightnessctl set 30%
 powerprofilesctl set power-saver
 
 # Startup programs
+<<<<<<< HEAD
 start_once swaybg -i "$HOME/Pictures/wall.jpg" -m fill
+=======
+start_once swaybg -i "$HOME/pics/wall.jpg" -m fill
+>>>>>>> a34560c (CHORE: initial commit)
 start_once nm-applet
 start_once waybar
 start_once foot --server
