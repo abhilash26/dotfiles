@@ -19,8 +19,9 @@ source_plugin() {
   [[ -f "$plugin_file" ]] && source "$plugin_file"
 }
 
-# Aliases
+# Add files
 source_file "$ZDOTDIR/zsh_aliases.zsh"
+source_file "$ZDOTDIR/zsh_exports.zsh"
 
 # Colors and completion
 autoload -Uz colors && colors

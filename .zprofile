@@ -19,7 +19,9 @@ export TERMINAL="foot"
 export EDITOR="nvim"
 export VISUAL="zeditor"
 export BROWSER="helium-browser"
-export PAGER="helium-browser"
+export PAGER="less"
+export MANPAGER="bat -plman"
+
 
 # Start Mango on the first virtual terminal
 if [[ "$(tty 2>/dev/null)" == "/dev/tty1" ]] && ! pgrep -x mango >/dev/null; then
